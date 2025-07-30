@@ -1,0 +1,15 @@
+// Write a JavaScript function to clone an array.
+function cloneArr(arr){
+    let clonedArr = [];
+    for(let i=0; i<arr.length; i++){
+        cloneArr.push(arr[i]// Using push to add each element to the new array
+        )
+
+    }
+    
+}
+
+
+
+
+

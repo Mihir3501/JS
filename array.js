@@ -37,6 +37,20 @@ let filteredArr = arr.filter(function (element) {
 })
 console.log(filteredArr);
 
+//remove by value using  for loop
+let arr2 = [1,2,3,4,5,6]
+let valueToremove = 3;
+let result = []
+
+for (let i= 0; i< arr2.length; i++){ 
+    if(arr2[i] !== valueToremove){ // check if the current element is not equal to the value to remove
+        result.push(arr2[i])
+    }
+}
+
+console.log(result,"remove by value using for loop:");
+
+
 //concat() method is used to merge two or more arrays.
 let a = [1, 2, 3];
 let b = [4, 5, 6];
@@ -48,6 +62,7 @@ let arr1 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
 console.log(arr1.indexOf(3))//output: 2
 console.log(arr1.indexOf(3, 4))//output: 5 
 
-//
+//incude() method determines whether an array includes a certain value 
+// among its entries, returning true or false as appropriate.
 
 
