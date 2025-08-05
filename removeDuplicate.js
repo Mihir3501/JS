@@ -40,3 +40,13 @@ function removeDuplicate(arr) {
 }
 console.log(removeDuplicate(["apple", "banana", "BaNaNa", "Apple", "orange", "banana", "grape"]));
 
+
+//remove duplicate using set
+
+const fruits = ["apple", "banana", "BaNaNa", "Apple", "orange", "banana", "grape"];
+
+function removeDuplicatee(arr){
+    return [...new Set(arr).map(item => item.toLowerCase())]
+        .filter((item, index, self) => self.indexOf(item) === index);
+}
+console.log(removeDuplicatee(fruits));
